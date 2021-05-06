@@ -1,8 +1,0 @@
-1. SELECT * FROM `ospiti` WHERE `document_type` = 'CI'R;
-2. SELECT * FROM `ospiti` WHERE `date_of_birth` >= '1988';
-3. SELECT * FROM `ospiti` WHERE `date_of_birth` < '2001-01-01';
-4. SELECT * FROM `ospiti` WHERE `name` LIKE 'd%';
-5. SELECT SUM(`price`) FROM `pagamenti` WHERE `status` = 'accepted';
-6. SELECT MAX(`price`) FROM `pagamenti` WHERE `status` = 'accepted';
-7. SELECT * FROM `ospiti` WHERE `document_type` = 'driver license' AND `date_of_birth` LIKE '1975%';
-8. SELECT COUNT(*) FROM `paganti` WHERE `ospite_id` <> 'NULL';
