@@ -1,0 +1,3 @@
+1. SELECT COUNT('name'), YEAR(`date_of_birth`) FROM `ospiti` GROUP BY YEAR(`date_of_birth`);
+2. SELECT COUNT(`price`), `status` FROM `pagamenti` GROUP BY `status`;
+3. SELECT COUNT(`stanza_id`), `stanza_id` FROM `prenotazioni` GROUP BY `stanza_id`;
