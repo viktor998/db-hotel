@@ -1,4 +1,4 @@
-1. SELECT * FROM `ospiti` WHERE `document_type` = 'CI'R;
+1. SELECT * FROM `ospiti` WHERE `document_type` = 'CI';
 2. SELECT * FROM `ospiti` WHERE `date_of_birth` >= '1988';
 3. SELECT * FROM `ospiti` WHERE `date_of_birth` < '2001-01-01';
 4. SELECT * FROM `ospiti` WHERE `name` LIKE 'd%';
