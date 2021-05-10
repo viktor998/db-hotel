@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/master.css">
+    <title>Stanze</title>
+</head>
+<body>
+    <div id="root">
+
+        <table>
+            <thead>
+                <tr>
+                  <th><strong>id</strong></th>
+                  <th><strong>room number</strong></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for='room in rooms'>
+                  <td><p>{{room.id}}</p></td>
+                  <td @click='getRoomInfo(room.id)'><p>{{room.room_number}}</p></td>
+                    
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="data" v-if='room_data'>
+            <span><strong>floor :</strong><p>{{room_data.floor}}</p></span>
+            <span><strong>beds :</strong><p>{{room_data.beds}}</p></span>
+            <span><strong>created at :</strong><p>{{room_data.created_at}}</p></span>
+            <span><strong>upated at :</strong><p>{{room_data.updated_at}}</p></span>
+        </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./assets/main.js"></script>
+</body>
+</html>

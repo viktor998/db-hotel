@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+thead tr th{
+    padding: 10px;
+
+}
+
+tbody tr td{
+    padding: 0 25px;
+    height: 10px;
+}
+
+#root{
+    display: flex;
+}
+
+.data{
+    margin-top: 50px;
+    padding: 10px;
+    border: 1px solid black;
+    height: 150px;
+    line-height: 2;
+}
+
+.data span{
+    display: flex;
+}
+
+.data span strong{
+    margin-right: 10px;
+    text-transform: uppercase;
+}
