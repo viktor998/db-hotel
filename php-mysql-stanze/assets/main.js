@@ -5,7 +5,7 @@ var app = new Vue({
         room_data: null
     },
     mounted(){
-        axios.get('http://localhost/php-mysql-stanze/api/stanze-api.php')
+        axios.get('http://localhost/db/db-hotel/php-mysql-stanze/api/stanze-api.php')
         .then(response => {
             
             this.rooms = response.data.response;
@@ -13,7 +13,7 @@ var app = new Vue({
     },
     methods: {
         getRoomInfo: function(id){
-            axios.get('http://localhost/php-mysql-stanze/api/stanze-api.php?id=' + id)
+            axios.get('http://localhost/db/db-hotel/php-mysql-stanze/api/stanze-api.php?id=' + id)
         .then(response => {
             
             this.room_data = response.data.response[0];
